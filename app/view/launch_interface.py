@@ -109,10 +109,13 @@ class LaunchInterface(GalleryInterface):
                 ['git', 'rev-parse', 'HEAD']).decode().strip()
             return output
         except:
-            return "当前目录不是一个Git项目"
+            return "当前目录不是一个Git项目，或者没有安装Git"
 
     def start_script(self):
         # 启动脚本
+        import os
         os.environ['http_proxy'] = ''
         os.environ['https_proxy'] = ''
-        subprocess.Popen(['cmd.exe', '/c', '.\\venv\\Scripts\\activate.bat && python launch.py'] + self.launch_params.split())
+        os.environ['PATH'] += ';./git/bin'
+        subprocess.Popen(['cmd.exe', '/c', 'set GIT_PYTHON_GIT_EXECUTABLE=git\\bin\\git.exe && .\\Python\\python.exe launch.py'] + self.launch_params.split())
+

@@ -37,7 +37,7 @@ class Config(QConfig):
 
 YEAR = 2023
 AUTHOR = "软盘驱动程序"
-VERSION = "v0.1.0"
+VERSION = "v0.1.1"
 HELP_URL = "https://github.com/clean-master/stable-diffusion-webui-launcher-directml"
 REPO_URL = "https://github.com/clean-master/stable-diffusion-webui-launcher-directml"
 FEEDBACK_URL = "https://github.com/clean-master/stable-diffusion-webui-launcher-directml/issues"
