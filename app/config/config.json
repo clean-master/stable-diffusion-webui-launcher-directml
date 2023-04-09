@@ -1,0 +1,20 @@
+{
+    "Material": {
+        "AcrylicBlurRadius": 15
+    },
+    "Update": {
+        "CheckUpdateAtStartUp": true
+    },
+    "Folders": {
+        "Download": "D:/文档/SD-webui启动器/app/download",
+        "LocalMusic": []
+    },
+    "MainWindow": {
+        "DpiScale": "Auto",
+        "Language": "zh"
+    },
+    "QFluentWidgets": {
+        "ThemeColor": "#009faa",
+        "ThemeMode": "Light"
+    }
+}

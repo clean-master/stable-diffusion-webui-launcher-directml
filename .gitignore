@@ -1,0 +1,23 @@
+# Compiled Python files
+*.pyc
+
+# Compiled C++ files
+*.o
+*.obj
+
+# Builds
+build/
+dist/
+
+# Qt Designer files
+*.ui
+
+# PyQt5 resource files
+*.qrc
+
+# Visual Studio Code files
+.vscode/
+*.code-workspace
+
+# macOS files
+.DS_Store
